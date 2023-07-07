@@ -35,7 +35,8 @@
       position: relative;
     }
 
-    .fixed-navbar a {
+    .fixed-navbar a,
+    .fixed-navbar span {
       display: inline-block;
       padding: 10px;
       text-decoration: none;
@@ -49,16 +50,17 @@
     /* Stil für den Dropdown-Inhalt */
     .dropdown-content {
       display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    padding: 10px;
-    top: calc(100% + 10px);
-    left: 0;
-    z-index: 999;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      top: calc(100% + 10px);
+      left: 0;
+      z-index: 999;
     }
 
     /* Zeige den Dropdown-Inhalt, wenn der Link mit der Maus überfahren wird */
-    .fixed-navbar li:hover .dropdown-content {
+    .fixed-navbar li:hover .dropdown-content,
+    .dropdown-content:hover {
       display: block;
     }
   </style>
@@ -69,7 +71,7 @@
     <ul>
       <li><a href="https://dreamtopolis.github.io/home/">Home</a></li>
       <li>
-        <div>Informationen</div>
+        <span>Informationen</span>
         <div class="dropdown-content">
           <a href="#">Server</a>
           <a href="#">Unser Team</a>
@@ -87,3 +89,5 @@
   </div>
 </body>
 </html>
+
+
