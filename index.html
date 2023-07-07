@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     
-    <!-- Zentrieren -->
+    /* Zentrieren */
     
     .Zentriert {
       text-align: center;
@@ -73,9 +73,28 @@
     .dropdown-content:hover {
       display: block;
     }
+  
+    /* Aktiviere das Dropdown-Menü beim Hovern über den Bereich zwischen "Informationen" und dem Dropdown-Inhalt */
+    .fixed-navbar li:hover .dropdown-trigger {
+      display: block;
+    }
+
+    /* Stil für den Bereich zwischen "Informationen" und dem Dropdown-Inhalt */
+    .dropdown-trigger {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      width: 100%;
+      height: 10px; /* Höhe des Bereichs anpassen */
+      display: none;
+      background-color: transparent;
+    }  
   </style>
 </head>
-<body>
+
+    <!-- Body -->  
+
+  <body>
   <div class="fixed-navbar">
     
     <!-- Navigationsleiste -->
@@ -84,6 +103,7 @@
       <li><a href="https://dreamtopolis.github.io/home/">Home</a></li>
       <li>
         <span>Informationen</span>
+        <div class="dropdown-trigger"></div>
         <div class="dropdown-content">
           <a href="https://dreamtopolis.github.io/server/">Server</a>
           <a href="https://dreamtopolis.github.io/rules/">Regeln</a>
