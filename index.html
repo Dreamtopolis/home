@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+<link rel="icon" href="https://cdn.discordapp.com/attachments/1102993022951624736/1104717550278955028/cooltext435018081935935.png" type="image/x-icon">
+  <title>Dreamtopolis</title>
+  <head>
   <style>
     /* CSS-Styling für die feste Navigationsleiste */
     .fixed-navbar {
@@ -19,18 +21,37 @@
       padding: 20px;
     }
 
-    /* Stil für die Buttons in der Navigationsleiste */
-    .fixed-navbar button {
-      margin-right: 10px;
+    /* Stil für die Listenelemente in der Navigationsleiste */
+    .fixed-navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .fixed-navbar li {
+      display: inline;
+    }
+
+    .fixed-navbar a {
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .fixed-navbar a:hover {
+      background-color: #ddd;
     }
   </style>
 </head>
 <body>
   <div class="fixed-navbar">
-    <!-- Hier sind die Buttons in der Navigationsleiste -->
-    <button>Startseite</button>
-    <button>Über uns</button>
-    <button>Kontakt</button>
+    <!-- Hier sind die "Buttons" in der Navigationsleiste -->
+    <ul>
+      <li><a href="#">Startseite</a></li>
+      <li><a href="#">Über uns</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
   </div>
 
   <div class="content">
