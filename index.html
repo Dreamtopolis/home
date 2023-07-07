@@ -26,6 +26,8 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: flex-start;
     }
 
     .fixed-navbar li {
@@ -47,12 +49,12 @@
     /* Stil für den Dropdown-Inhalt */
     .dropdown-content {
       display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      padding: 10px;
-      top: 100%;
-      left: 0;
-      z-index: 999; /* sorgt dafür, dass der Inhalt über anderen Elementen liegt */
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 10px;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 999;
     }
 
     /* Zeige den Dropdown-Inhalt, wenn der Link mit der Maus überfahren wird */
