@@ -59,12 +59,24 @@
       top: calc(100% + 10px);
       left: 0;
       z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
     }
 
     /* Zeige den Dropdown-Inhalt, wenn der Link mit der Maus überfahren wird */
     .fixed-navbar li:hover .dropdown-content,
     .dropdown-content:hover {
       display: block;
+    }
+
+    .fixed-navbar li:hover .dropdown-content {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .fixed-navbar li:hover .dropdown-content:hover {
+      opacity: 1;
     }
   </style>
 </head>
@@ -91,4 +103,3 @@
   </div>
 </body>
 </html>
-
