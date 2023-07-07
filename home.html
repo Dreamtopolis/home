@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS-Styling für die feste Navigationsleiste */
+    .fixed-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      z-index: 9999; /* sorgt dafür, dass die Leiste über anderen Inhalten liegt */
+    }
+
+    /* Stil für den restlichen Inhalt der Webseite */
+    .content {
+      margin-top: 50px; /* Platzhalter, um sicherzustellen, dass der Inhalt nicht von der Leiste überdeckt wird */
+      padding: 20px;
+    }
+
+    /* Stil für die Buttons in der Navigationsleiste */
+    .fixed-navbar button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fixed-navbar">
+    <!-- Hier sind die Buttons in der Navigationsleiste -->
+    <button>Startseite</button>
+    <button>Über uns</button>
+    <button>Kontakt</button>
+  </div>
+
+  <div class="content">
+    <!-- Hier kannst du den restlichen Inhalt deiner Webseite einfügen -->
+    <h1>Willkommen auf meiner Webseite</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+</body>
+</html>
