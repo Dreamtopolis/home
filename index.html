@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <link rel="icon" href="https://cdn.discordapp.com/attachments/1102993022951624736/1104717550278955028/cooltext435018081935935.png" type="image/x-icon">
@@ -63,17 +63,17 @@
       position: absolute;
       background-color: #f9f9f9;
       padding: 10px;
-      top: calc(100% + 10px);
+      top: 100%; /* Verändert, um den Dropdown-Inhalt unter dem Menü anzuzeigen */
       left: 0;
       z-index: 999;
     }
 
-    /* Zeige den Dropdown-Inhalt, wenn der Link mit der Maus überfahren wird */
+    /* Zeige den Dropdown-Inhalt, wenn der Link oder der Dropdown-Inhalt selbst mit der Maus überfahren wird */
     .fixed-navbar li:hover .dropdown-content,
     .dropdown-content:hover {
       display: block;
     }
-  
+
     /* Aktiviere das Dropdown-Menü beim Hovern über den Bereich zwischen "Informationen" und dem Dropdown-Inhalt */
     .fixed-navbar li:hover .dropdown-trigger {
       display: block;
@@ -88,7 +88,6 @@
       height: 10px; /* Höhe des Bereichs anpassen */
       display: none;
       background-color: transparent;
-    }  
   </style>
 </head>
 
