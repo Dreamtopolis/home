@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="icon" href="https://cdn.discordapp.com/attachments/1102993022951624736/1104717550278955028/cooltext435018081935935.png" type="image/x-icon">
-  <title>Dreamtopolis</title>
-  <head>
+<title>Dreamtopolis</title>
+<head>
   <style>
     /* CSS-Styling für die feste Navigationsleiste */
     .fixed-navbar {
@@ -30,6 +30,7 @@
 
     .fixed-navbar li {
       display: inline;
+      position: relative;
     }
 
     .fixed-navbar a {
@@ -42,6 +43,24 @@
     .fixed-navbar a:hover {
       background-color: #ddd;
     }
+
+    /* Stil für den Dropdown-Inhalt */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+      z-index: 999; /* sorgt dafür, dass der Inhalt über anderen Elementen liegt */
+    }
+
+    }
+
+    /* Zeige den Dropdown-Inhalt, wenn der Link mit der Maus überfahren wird */
+    .fixed-navbar li:hover .dropdown-content {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -49,7 +68,14 @@
     <!-- Hier sind die "Buttons" in der Navigationsleiste -->
     <ul>
       <li><a href="https://dreamtopolis.github.io/home/">Home</a></li>
-      <li><a href="#">Über uns</a></li>
+      <li>
+        <a href="#">Informationen</a>
+        <div class="dropdown-content">
+          <a href="#">Server</a>
+          <a href="#">Unser Team</a>
+          <a href="#">Regeln</a>
+        </div>
+      </li>
       <li><a href="#">Kontakt</a></li>
     </ul>
   </div>
